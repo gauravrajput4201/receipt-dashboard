@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
@@ -10,7 +9,7 @@ import PaymentForm from "./payment-form";
 import { ScrollArea } from "../ui/scroll-area";
 
 export default function QuickbookInterface() {
-  const [activeTab, setActiveTab] = useState("comment");
+  // const [activeTab, setActiveTab] = useState("comment");
 
   return (
     <div className="w-[300px] min-h-screen h-dvh overflow-hi">
@@ -64,7 +63,7 @@ export default function QuickbookInterface() {
           <Tabs
             defaultValue="comment"
             className="w-auto"
-            onValueChange={setActiveTab}
+            // onValueChange={setActiveTab}
           >
             <TabsList className="bg-transparent h-auto p-0 text-sm">
               <TabsTrigger
